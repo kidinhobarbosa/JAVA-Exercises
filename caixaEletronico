@@ -1,0 +1,48 @@
+package projetos;
+import java.util.Scanner;
+
+public class caixa_eletronico {
+
+	public static void main(String[] args) {
+         System.out.print("Quanto você quer tirar?");
+         Scanner sc = new Scanner(System.in);
+         String s = sc.nextLine();
+         int x = Integer.parseInt(s);
+            	
+        if (x>=100) {
+       
+        		 System.out.println((x/100) + " nota(s) de 100");
+        		  x=(x%100);
+        }
+        
+         if (x>=50) {
+        	
+        	System.out.println((x/50) + " nota(s) de 50");
+                  x=(x%50);
+         }
+        if (x>=10) {     
+        	
+        	System.out.println((x/10) + " nota(s) de 10");
+        	      x=(x%10);
+        }
+        if (x>=5) {
+            	
+            	System.out.println((x/5) + " nota(s) de 5");
+            	  x=(x%5);
+        }
+        if (x>=2) {      
+               
+                System.out.println((x/2) + " nota(s) de 2");
+                 x=(x%2);
+        }
+        if (x>=1) {      
+                   
+                System.out.println(x + " nota de 1");
+               }
+        }
+        }
+      
+
+        
+	
+
