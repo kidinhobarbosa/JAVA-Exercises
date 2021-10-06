@@ -1,0 +1,69 @@
+package projetos;
+
+public class Artista {
+
+		
+		private String musico;
+		
+			
+		public Artista(String musico) {
+		this.musico = musico;
+			
+		}
+		
+		public String getMusico() {
+			return musico;
+		}
+		
+		public String setMusico(String musico) {
+			this.musico = musico;
+			return this.musico;
+		}
+			
+		public void mudarProfissao() {
+			this.musico = "pintor";
+		
+
+	}
+
+}
+package projetos;
+
+public class Animal {
+
+	
+	    private String cor;
+
+	     public Animal(String cor){
+	         this.cor = cor;
+	     }
+	     public String getCor(){
+	         return cor;
+
+	     }
+	     
+	     public String setCor(String cor) {
+	    	 this.cor = cor;
+	    	 return this.cor;
+	    	
+	     }
+
+ public void mudarCor() {
+	 this.cor = "azul";
+ }
+
+
+	}
+
+
+Animal animal = new Animal("verde");
+        animal.setCor("vermelho");
+        System.out.println("animal " + animal.getCor());
+        System.out.println("animal " + animal.setCor("Rosa"));
+        animal.mudarCor();
+		
+		Artista virgil = new Artista("Planet X");
+		
+virgil.mudarProfissao();
+		System.out.println("artista " + virgil.getMusico());
+		System.out.println("artista " + virgil.setMusico("CAB"));
