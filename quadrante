@@ -1,0 +1,36 @@
+package projetos;
+
+import java.util.Scanner;
+
+public class Quadrante {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int x, y;
+		System.out.println("Suponha uma circunferência de raio 5");
+		System.out.println("Digite o valor da coordenada x: ");
+		x = in.nextInt();
+		System.out.println("Digite o valor da coordenada y: ");
+		y = in.nextInt();
+		
+		if (x==0 && y==0) {
+			System.out.println("Está na origem");
+		} else if (x==0 && y>=-5 && y<=5) {
+			System.out.println("Está no eixo y");
+		} else if (y==0 && x>=-5 && x<=5) {
+			System.out.println("Está no eixo x");
+		} else if (x>0 && x<= 5 && y>0 && y<=5) {
+			System.out.println("Está no quadrante 1");
+		} else if (x<0 && x>=-5 && y>0 && y<=5) {
+			System.out.println("Está no quadrante 2");
+		} else if (y<0 && y>=-5 && x<0 && x>=-5) {
+			System.out.println("Está no quadrante 3");
+		} else if (x>0 && x<=5 && y<0 && y>=-5) {
+			System.out.println("Está no quadrante 4");
+		} else {
+			System.out.println("Valor de coodernada inválido");
+		}
+
+	}
+
+}
