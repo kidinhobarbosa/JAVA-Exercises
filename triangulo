@@ -1,0 +1,21 @@
+
+public class Triângulo {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int a, b, c;
+		System.out.println("Digite um lado do triângulo: ");
+        a = in.nextInt();
+        System.out.println("Digite outro lado do triângulo: ");
+        b = in.nextInt();
+        System.out.println("Digite o último lado do triângulo: ");
+        c = in.nextInt();
+        
+        if (a==b && a==c) {
+        	System.out.println("O triângulo é equilátero");
+        } else if (a==b || b==c || a==c) {
+        	System.out.println("O triângulo é isóceles");
+        } else
+        	System.out.println("O triângulo é escaleno");
+          }
+          }
