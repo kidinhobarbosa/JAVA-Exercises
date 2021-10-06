@@ -1,0 +1,27 @@
+package projetos;
+import java.util.Scanner;
+public class maior_numero {
+
+	public static void main(String[] args) {
+		
+		System.out.print("Give me three numbers: ");
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		String t = sc.nextLine();
+		String u = sc.nextLine();
+		int x = Integer.parseInt(s);
+		int y = Integer.parseInt(t);
+		int z = Integer.parseInt(u);
+		
+	if (x>=y && x>=z) {
+		 System.out.println("The higher number is: " + x);
+		}
+	else if (y>=y && y>=z) {
+		System.out.println("The higher number is: " + y);
+	}
+	else if (z>=x && z>=y) {
+		System.out.println("The higher number is: " + z);
+	}
+	
+	}
+}
